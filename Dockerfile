@@ -26,4 +26,4 @@ RUN cd frontend && npm install && npm run build
 RUN composer build
 
 USER root # add this line before entry points
-ENTRYPOINT [ "/app/entrypoint.sh" ]
+RUN ENTRYPOINT [ "/app/entrypoint.sh" ]
