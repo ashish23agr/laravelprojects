@@ -1,0 +1,283 @@
+  #dresscanvas{display: block!impotant;}
+  canvas {
+    display: block!important;
+}
+.show-app #shopify-section-announcement-bar{
+  z-index: 1;
+}
+.show-app #shopify-section-header{
+  z-index: 1;
+}
+
+  .design-maker-wrapper{
+  	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 99;
+    display:none;
+    margin:0;
+    font-family:-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Ubuntu, Helvetica Neue, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  }
+  .button-custom{  
+  	cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font: inherit;
+    padding: 0.9rem 3rem 1.1rem;
+    text-decoration: none;
+    border: 0;
+    border-radius: 0;
+    background-color:#445958;
+    box-shadow:none;
+    color: #fff;
+    min-width: 12rem;
+    min-height: 4.5rem;
+    transition: box-shadow var(--duration-short) ease;
+    -webkit-appearance: none;
+    appearance: none;
+    text-transform:uppercase;
+    font-size:14px;
+  }
+  .button-custom:not([disabled]):hover {
+    background-color:#000;
+    color: #fff;
+  }
+  .button-custom--full-width {
+    display: flex;
+    width: 100%;
+  }
+  .design-maker-head{
+  	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+  }
+  .design-maker-close{
+  	color:#000;
+    display:flex;
+    align-items:center;
+    line-height: 1.1;
+    text-decoration: none;
+    margin-left: auto;
+  }
+  .design-maker-close .icon{  
+  	width:14px;
+    height:14px;
+    fill:currentColor;
+    margin-right: 5px;
+  }
+  .design-maker-main{
+    padding: 100px 30px 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .design-block{
+    width: 60%;
+    padding-right:30px;
+    position: relative;
+    height: calc(100vh - 100px);
+  }
+  
+  .dress-column{
+  	display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100% !important;
+    height: 80vh !important;
+  }
+  .dress-column canvas{
+    /*height: auto !important;*/
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .design-detail{
+  	width: 40%;
+    height: calc(100vh - 100px);
+    position: relative;
+  }
+  .design-title{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: solid 1px #000;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    align-items: center;
+  }
+  .design-title h4{
+  	text-transform: uppercase;
+    flex: 0 0 70%;
+    max-width: 70%;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 2.3px;
+    margin:0;
+    margin: 0;
+    line-height: 1.1;
+    color:#000;
+  }
+  .design-title .price-variant{
+  	flex: 0 0 30%;
+    max-width: 30%;
+    justify-content: flex-end;
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 2.3px;
+    line-height: 1.1;
+    text-align:right;
+    font-style:normal;
+    color: #000;
+  }
+  
+  .grid-row{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .grid-row [class*='grid-']{
+  	width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .grid-row-2col [class*='grid-']{
+    -webkit-flex: 0 0 50%;
+    -moz-flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .design-form .form-group{
+  	position:relative;
+    margin-bottom:15px;
+  }
+  .design-form .form-group .label{
+  	font-size:14px;
+    color:#000;
+    margin-bottom:5px;
+    display:inline-block;
+    line-height:16px;
+  }
+  .design-form .form-control{
+  	border:solid 1px #000;
+    color:#000;
+    height:40px;
+    padding:0px 12px;
+    color:#000;
+    font-size:14px;
+    background:#fff;
+    width:100%;
+    outline: none;
+    box-shadow: none;
+  }
+  .design-form .color-group .label{
+    display: block;
+    border-bottom: solid 1px #000;
+    border-top: solid 1px #000;
+    margin-bottom:15px;
+    padding:5px 0px;
+    text-transform: uppercase;
+  }
+  .color-list{    
+    overflow: auto;
+    overflow-x: hidden;
+    max-height: 200px;
+  }
+  .color-list ul{
+  	display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin:0;
+    padding:0;
+    list-style:none;
+  }
+  .color-list ul li{
+    width: 20%;
+    /*margin-bottom: 15px;*/
+    padding: 0 5px;
+    text-transform: none;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color:#000;
+    text-align:center;
+  }
+  .color-list ul li .color-pic{
+  	margin: auto;
+  }
+  .color-list ul li .color-pic img{
+    border-radius: 100%;
+    width: 72px;
+    height: 72px;
+    display: block;
+    text-align: center;
+    margin: auto;
+    border: solid 1px #fff;
+    padding: 2px;
+  }
+  .color-list ul li.active .color-pic img{
+    border: solid 1px #000;
+  }
+  .color-list ul li p{
+  	font-size: 12px;
+    line-height: 16px;
+    letter-spacing: .5px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    color:#000;
+  }
+
+
+@media screen and (max-width: 1440px){
+  .design-block{width: 50%;}
+  .design-detail{width: 50%;}
+}
+@media screen and (max-width: 1280px){
+  .color-list ul li .color-pic img{width: 50px; height: 50px;}
+  .color-list ul li p{margin-top: 0px;}
+}
+@media screen and (max-width: 1199px){
+  .color-list ul li{width: 33.333%; margin-bottom: 15px;}
+}
+
+@media screen and (max-width:991px){
+  .design-title h4{font-size: 16px;}
+  .design-title .price-variant{font-size: 16px;}
+}
+@media screen and (max-width:767px){
+  .design-block{width:100%;height: auto; padding:0;margin-bottom: 30px;}
+  .design-detail{width:100%; height: auto; margin-bottom: 30px;}
+  .design-maker-wrapper{overflow-y: scroll;}
+  .dress-column{height: 60vh !important;}
+  .design-title{padding-bottom: 10px;}
+}
+@media screen and (max-width:480px){
+  .grid-row-2col [class*='grid-']{-webkit-flex: 0 0 100%; -moz-flex: 0 0 100%; -ms-flex: 0 0 100%; flex: 0 0 100%; max-width: 100%;}
+}
+@media screen and (max-width:375px){
+  .color-list ul li{width:50%;}
+}

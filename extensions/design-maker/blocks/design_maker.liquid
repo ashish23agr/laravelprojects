@@ -1,0 +1,24 @@
+<div class="customize-action">
+  <input type="hidden" id="dm-custom-base64-code" value="">
+  <a href="javascript:;" class="button js-button button--full-width" onclick="document.getElementById('design-maker').style.display='block'">Create Your Design</a>
+</div>
+
+<script src="{{ 'pixi.min.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'jquery-1.7.2.min.j' | asset_url }}" defer="defer"></script>
+<script src="{{ 'jquery-ui.min.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'preloadjs.min.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'barn_app_engine.js' | asset_url }}" defer="defer"></script>
+
+{% schema %}
+{
+  "name": "Design Maker",
+  "target": "section",
+  "stylesheet": "designmakerlayout.css",
+  "javascript": "functions.js",
+  "settings": [
+    { "type": "product", "id": "product", "label": "product", "autofill": true },
+    { "type": "color", "id": "colour", "label": "Star Colour", "default": "#ff0000" }
+  ]
+}
+{% endschema %}
+
