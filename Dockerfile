@@ -19,14 +19,9 @@ COPY web/nginx.conf /etc/nginx/nginx.conf
 RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
 
 RUN composer install
-
-# Install MySQL client and other dependencies
-RUN apt-get update \
-    && apt-get install -y \
-    default-mysql-client \
-    && docker-php-ext-install mysqli pdo_mysql
 	
 # Set environment variables for MySQL connection
+ENV DB_CONNECTION=mysql
 ENV DB_HOST=dress.czpbozyec1yt.us-east-1.rds.amazonaws.com
 ENV DB_PORT=3306
 ENV DB_DATABASE=dress_maker
