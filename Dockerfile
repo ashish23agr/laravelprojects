@@ -27,11 +27,11 @@ RUN apt-get update \
     && docker-php-ext-install mysqli pdo_mysql
 	
 # Set environment variables for MySQL connection
-DB_HOST=dress.czpbozyec1yt.us-east-1.rds.amazonaws.com
-DB_PORT=3306
-DB_DATABASE=dress_maker
-DB_USERNAME=root
-DB_PASSWORD=meaQj6Qm41h4wRy9K729
+ENV DB_HOST=dress.czpbozyec1yt.us-east-1.rds.amazonaws.com
+ENV DB_PORT=3306
+ENV DB_DATABASE=dress_maker
+ENV DB_USERNAME=root
+ENV DB_PASSWORD=meaQj6Qm41h4wRy9K729
 
 RUN cd frontend && npm install && npm run build
 RUN composer build
