@@ -19,8 +19,6 @@ COPY web/nginx.conf /etc/nginx/nginx.conf
 RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
 
 RUN composer install
-RUN touch /app/storage/db.sqlite
-RUN chown www-data:www-data /app/storage/db.sqlite
 
 # Install MySQL client and other dependencies
 RUN apt-get update \
@@ -29,7 +27,6 @@ RUN apt-get update \
     && docker-php-ext-install mysqli pdo_mysql
 	
 # Set environment variables for MySQL connection
-DB_CONNECTION=mysql
 DB_HOST=dress.czpbozyec1yt.us-east-1.rds.amazonaws.com
 DB_PORT=3306
 DB_DATABASE=dress_maker
