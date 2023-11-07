@@ -4,10 +4,11 @@ ARG SHOPIFY_API_KEY
 ENV SHOPIFY_API_KEY=$SHOPIFY_API_KEY
 
 RUN apk update && apk add --update nodejs npm \
-    composer php-pdo_sqlite php-pdo_mysql php-pdo_pgsql php-mysqli php-simplexml php-fileinfo php-dom php-tokenizer php-xml php-xmlwriter php-session \
+    composer php-pdo_sqlite php-pdo_mysql php-pdo_pgsql php-simplexml php-fileinfo php-dom php-tokenizer php-xml php-xmlwriter php-session \
     openrc bash nginx
 
-RUN docker-php-ext-install pdo
+# Install PHP extensions
+RUN docker-php-ext-install pdo pdo_mysql mysqli
 
 COPY --chown=www-data:www-data web /app
 WORKDIR /app
