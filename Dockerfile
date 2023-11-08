@@ -21,6 +21,8 @@ RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
 
 RUN composer install
 
+RUN chown www-data:www-data /app/nginx.conf
+
 RUN cd frontend && npm install && npm run build
 RUN composer build
 
