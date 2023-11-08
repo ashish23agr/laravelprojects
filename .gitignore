@@ -5,6 +5,7 @@
 /web/storage/db.sqlite
 /web/vendor
 /web/composer.lock
+.env
 .env.*
 !.env.example
 !.env.testing

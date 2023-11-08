@@ -2,7 +2,7 @@
 
 name = "designmakerapp"
 client_id = "1c5c035607424ad3ff175e29d947282c"
-application_url = "https://leaving-peripherals-ment-minority.trycloudflare.com"
+application_url = "https://shopify-cli-app-2ff8c09347c3.herokuapp.com"
 embedded = true
 
 [access_scopes]
@@ -11,9 +11,9 @@ scopes = "write_products,read_products,read_script_tags,write_script_tags,write_
 
 [auth]
 redirect_urls = [
-  "https://leaving-peripherals-ment-minority.trycloudflare.com/auth/callback",
-  "https://leaving-peripherals-ment-minority.trycloudflare.com/auth/shopify/callback",
-  "https://leaving-peripherals-ment-minority.trycloudflare.com/api/auth/callback"
+  "https://shopify-cli-app-2ff8c09347c3.herokuapp.com/auth/callback",
+  "https://shopify-cli-app-2ff8c09347c3.herokuapp.com/auth/shopify/callback",
+  "https://shopify-cli-app-2ff8c09347c3.herokuapp.com/api/auth/callback"
 ]
 
 [webhooks]
