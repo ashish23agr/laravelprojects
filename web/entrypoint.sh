@@ -10,7 +10,7 @@ cd /app
 echo "Running database migrations..."
 php artisan migrate --force
 
-echo "Starting nginx server..."
+echo "Starting nginx server...."
 openrc
 touch /run/openrc/softlevel
 rc-service nginx start
