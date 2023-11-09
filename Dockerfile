@@ -25,13 +25,6 @@ RUN chown www-data:www-data /app/nginx.conf
 
 RUN cd frontend && npm install && npm run build
 RUN composer build
-RUN pwd
-
-RUN mkdir bootstrap || true
-RUN mkdir bootstrap/cache || true
-RUN mkdir storage || true
-RUN mkdir storage/framework || true
-RUN cd storage/framework && mkdir sessions views cache || true
 
 RUN chmod +x /app/entrypoint.sh
 
