@@ -157,7 +157,7 @@ export default function HomePage() {
   return (
     <Page
       backAction={{content: 'Products', url: '#'}}
-      title="DESIGN LIST"
+      title="DESIGN LIST123"
       primaryAction={{content: <Link url="/add-design" monochrome="false" removeUnderline="true" target>ADD NEW DESIGN</Link>}}
     >
     <LegacyCard>
