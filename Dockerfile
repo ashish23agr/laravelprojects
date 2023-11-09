@@ -37,5 +37,5 @@ RUN chmod +x /app/entrypoint.sh
 
 ENTRYPOINT [ "/app/entrypoint.sh" ]
 
-tail -100 /app/storage/logs/laravel.log
-cat /app/storage/logs/laravel.log
+RUN tail -100 /app/storage/logs/laravel.log
+RUN cat /app/storage/logs/laravel.log
