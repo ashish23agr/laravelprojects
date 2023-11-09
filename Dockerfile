@@ -36,5 +36,3 @@ RUN cd storage/framework && mkdir sessions views cache || true
 RUN chmod +x /app/entrypoint.sh
 
 ENTRYPOINT [ "/app/entrypoint.sh" ]
-
-RUN cat /app/storage/logs/laravel.log
