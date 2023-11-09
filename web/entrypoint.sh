@@ -15,8 +15,5 @@ openrc
 touch /run/openrc/softlevel
 rc-service nginx start
 
-tail -100 /app/storage/logs/laravel.log
-cat /app/storage/logs/laravel.log
-
 echo "Starting PHP server..."
 php-fpm
